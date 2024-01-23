@@ -18,6 +18,8 @@ all: create
 create: $(SRC_PATH)main.o $(LIBPATH)functions.o 
 	$(CC) $(FLAGS) -o $(DESTDIR)$@ $^ $(LIBS) 
 	rm $(SRC_PATH)*.o
+	rm $(LIBPATH)*.o
+
 	
 
 

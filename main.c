@@ -8,7 +8,7 @@ int main(int argc, char const *argv[])
 {
     if(argc == 1)
     {
-        printf("No arguments passed\n");
+        help();
         return 0;
     }
     else if(argc == 2)

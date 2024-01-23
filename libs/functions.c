@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+
+
+
 void help(){
     printf("Usage: ./main [OPTION] [IP]\n");
     printf("Options:\n");
