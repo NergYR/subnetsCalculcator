@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "libs/functions.h"
 #include "libs/structs.h"
-
+char ip_send[255];
 
 int main(int argc, char const *argv[])
 {
@@ -22,7 +22,9 @@ int main(int argc, char const *argv[])
         }else if(strcmp(argv[1], "-4") == 0){
             if(argc == 3)
             {
-                subnetting_ipv4(argv[2]);
+
+                strcpy(ip_send, argv[2]);
+                subnetting_ipv4(ip_send);
             }else{
                 printf("Usage: ./main -4 [IP]\n");
             }
